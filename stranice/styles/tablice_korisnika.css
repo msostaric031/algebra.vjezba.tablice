@@ -1,0 +1,22 @@
+table,
+th,
+td {
+  border: 2px solid gray;
+  border-collapse: collapse;
+}
+th {
+  background-color: lightgray;
+  padding: 8px 0;
+}
+.img1 {
+  width: 280px;
+}
+.img2 {
+  width: 120px;
+}
+.imgCell {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
