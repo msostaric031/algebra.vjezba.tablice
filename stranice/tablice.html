@@ -5,23 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tablice</title>
-    <style>
-      table,
-      th,
-      td {
-        border: 1px solid black;
-        border-collapse: collapse;
-      }
 
-      th {
-        background-color: lightgray;
-      }
-
-      thead {
-        background-color: black;
-        color: white;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/tablice.css" />
   </head>
 
   <body>
@@ -33,27 +18,125 @@
 
     <section>
       <h2 id="#Tablica1">Tablica 1</h2>
-      <table>
+
+      <table style="width: 100%">
         <tr>
-          <td></td>
+          <th>Ime</th>
+          <th>Prezime</th>
+          <th>Godine</th>
+        </tr>
+        <tr>
+          <td>Marko</td>
+          <td>Marković</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>Ivan</td>
+          <td>Ivić</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>Marija</td>
+          <td>Marić</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>Marina</td>
+          <td>Marinović</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td>Kylian</td>
+          <td>Mbappe</td>
+          <td>24</td>
         </tr>
       </table>
     </section>
     <hr />
     <section>
       <h2 id="#Tablica2">Tablica 2</h2>
-      <table>
+
+      <table style="width: 100%">
         <tr>
-          <td></td>
+          <th>Redni broj</th>
+          <th>Materijal</th>
+          <th>Materijal 2</th>
+          <th>Materijal 3</th>
+          <th>Materijal 4</th>
+        </tr>
+        <tr>
+          <td class="num">1</td>
+          <td>Plastika</td>
+          <td>Željezo</td>
+          <td>Guma</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td>Željezo</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td colspan="2">Kombinacija željeza i plastike</td>
+          <td colspan="2">Kombinacija raznih materijala</td>
+        </tr>
+        <tr>
+          <td class="num">4</td>
+          <td>&nbsp;</td>
+          <td colspan="2">Kombinacija željeza i gume</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="num">5</td>
+          <td colspan="2">Kombinacija drva, željeza i plastika</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+
         </tr>
       </table>
     </section>
     <hr />
     <section>
       <h2 id="#Tablica3">Tablica 3</h2>
-      <table>
+
+      <table style="width: 100%">
         <tr>
-          <td></td>
+          <th>Predmet</th>
+          <th>Moguće izvedbe</th>
+          <th>Boja</th>
+          <th>Broj komada</th>
+          <th>Napomena</th>
+        </tr>
+        <tr>
+          <td rowspan="3">Igračka 1</td>
+          <td rowspan="2">Auto</td>
+          <td>plava</td>
+          <td class="num">10</td>
+          <td>Pakirati pojedinačno</td>
+        </tr>
+        <tr>
+          <td>Crvena</td>
+          <td class="num">20</td>
+          <td>Pakirati u setovima od 10 kom</td>
+        </tr>
+        <tr>
+          <td>Vlak</td>
+          <td>Zelena</td>
+          <td class="num">5</td>
+          <td>U velike kutije</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Igračka 2</td>
+          <td rowspan="2">Medo</td>
+          <td>Roza</td>
+          <td rowspan="2" class="num2">15</td>
+          <td rowspan="2">Plišani veličine 20cm</td>
+        </tr>
+        <tr>
+          <td>Smeđa</td>
         </tr>
       </table>
     </section>
