@@ -1,0 +1,27 @@
+table {
+  margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: lightgray;
+}
+
+thead {
+  background-color: black;
+  color: white;
+}
+
+.num {
+  text-align: right;
+}
+.num2 {
+  text-align: center;
+  vertical-align: bottom;
+}
