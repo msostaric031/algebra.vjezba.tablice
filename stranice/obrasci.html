@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obrasci</title>
+  </head>
+  <body>
+    <nav>
+      <h3><a href="../index.html">Naslovna stranica</a></h3>
+    </nav>
+    <hr />
+    <section>
+      <form
+        name="prijava"
+        action=""
+        method="post"
+        enctype="multipart/form-data"
+        autocomplete="on"
+      >
+        <p>
+          <label for="ime">Ime i prezime *</label><br />
+          <input
+            type="text"
+            name="ime"
+            id="ime"
+            placeholder="Vaše ime i prezime"
+          />
+        </p>
+
+        <p>
+          <label for="email">E-mail adresa *</label><br />
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Upišite valjanu e-mail adresu"
+            style="min-width: 200px"
+          />
+        </p>
+
+        <p>
+          <label for="kontakt">Kontakt broj telefona</label><br />
+          <input type="number" />
+        </p>
+
+        <p>
+          <label for="datum">Datum rođenja</label><br />
+          <input type="date" name="datum" id="datum" />
+        </p>
+
+        <p>
+          <label for="jezici">Koje jezike govorite?</label><br />
+          Engleski
+          <input type="checkbox" name="jezici" id="jezik1" /> Talijanski
+          <input type="checkbox" name="jezici" id="jezik2" /> Njemački
+          <input type="checkbox" name="jezici" id="jezik3" />Francuski
+          <input type="checkbox" name="jezici" id="jezik4" /> Španjolski
+          <input type="checkbox" name="jezici" id="jezik5" />
+        </p>
+
+        <p>
+          <label for="pitanje"
+            >Da li ste do sada koristili usluge naše tvrtke?</label
+          ><br />
+          Da <input type="radio" name="pitanje" id="odg1" /> Ne
+          <input type="radio" name="pitanje" id="odg2" />
+        </p>
+
+        <p>
+          <label for="zivotopis">Priložite životopis</label><br />
+          <input type="file" name="zivotopis" id="zivotopis" required />
+        </p>
+
+        <p>
+          <input type="reset" name="reset_btn" id="reset" value="Poništi" />
+          <input type="submit" name="submit" id="submit" value="Prijavi se" />
+        </p>
+      </form>
+    </section>
+  </body>
+</html>
